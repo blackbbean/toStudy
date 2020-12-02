@@ -1,0 +1,17 @@
+html 
+    head
+        meta(charset ='utf-8')
+        title = 'To Do List - Minjeong & Kunyong'
+
+    body
+        hi = toDoListTitle
+        form(action='/add_list' method='post')
+            p 
+                label(for='content') Something to Study : 
+                input(type ='text' name='content')
+                input(type='submit' value ='add')
+            p 
+                ul
+                    each val in toDoLists
+                        li=val
+                        
