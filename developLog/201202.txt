@@ -1,0 +1,3 @@
+1. project initialize. 
+2. Make Popop to add new item , but get error?
+    - I thought "just click button and new popup page appear" is just a local thing but why GET error? 
