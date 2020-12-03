@@ -14,4 +14,14 @@ html
                 ul
                     each val in toDoLists
                         li=val
-                        
+            p
+                input(type='button' value='add' onclick="addNewItem()")
+
+
+    script(type='text/javascript').
+        addNewItem = function(){
+            var url = "popup.pug"
+            var name = "popup test"
+            var option = "width = 500, height=500, top=100, left=200, location=no"
+            window.open(url,name,option)
+        }
